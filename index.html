@@ -7,13 +7,18 @@
 		<!-- TAILWIND CDN -->
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script defer src="./assets/js/script.js"></script>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="./assets/img/favicon-black.png"
+		/>
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<title>Ivan's Portfolio</title>
 	</head>
 	<body>
 		<!-- NAVBAR -->
 		<nav
-			class="relative bg-gray-800 px-4 py-4 flex justify-between items-center"
+			class="relative px-4 lg:px-60 py-4 flex justify-between shadow-lg shadow-slate-100 items-center"
 		>
 			<a class="text-3xl font-bold leading-none" href="#">
 				<img src="./assets/img/logo.png" width="80px" alt="" />
@@ -31,15 +36,22 @@
 					</svg>
 				</button>
 			</div>
-			<ul
-				class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6"
-			>
+			<ul class="hidden lg:flex lg:items-end lg:w-auto lg:space-x-6">
 				<li>
-					<a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a>
+					<a
+						class="text-sm text-gray-800 font-medium hover:text-gray-500"
+						href="#"
+						>Home</a
+					>
 				</li>
 
 				<li>
-					<a class="text-sm text-gray-400 hover:text-gray-500" href="#">CV</a>
+					<a
+						class="text-sm text-gray-800 font-medium hover:text-gray-500"
+						href="./assets/img/CV_Ivan Verdugo.pdf"
+						download=""
+						>CV</a
+					>
 				</li>
 			</ul>
 		</nav>
@@ -90,5 +102,71 @@
 			</nav>
 		</div>
 		<!-- FIN NAVBAR -->
+		<main
+			class="text-gray-800 mx-auto grid grid-cols-1 lg:grid-cols-2 py-20 px-10 lg:px-60 justify-center"
+		>
+			<!-- Informacion personal -->
+			<div class="mx-auto mt-16">
+				<h3 class="text-4xl font-bold mb-2">Sobre mi</h3>
+				<h4 class="text-2xl font-semibold mb-6">
+					Soy Iván Verdugo, desarrollador Fullstack
+				</h4>
+				<p class="lg:w-1/2 tracking-widest">
+					Compositor con 10 años de experiencia administrando estudio de
+					grabación, gestionando proyectos orientados a clientes profesionales,
+					amateur y grandes empresas del área automotriz y telecomunicaciones.
+					Actualmente Desarrollador Fullstack con experiencia utilizando
+					lenguajes como HTML, CSS, JavaScript y framework Vue.js.
+				</p>
+			</div>
+			<div class="lg:mx-auto lg:mt-16">
+				<h3 class="text-4xl font-bold mb-6 mt-8 lg:mt-0">Habilidades</h3>
+				<ul class="list-disc list-inside tracking-widest">
+					<li>Javascript</li>
+					<li>CSS</li>
+					<li>HTML</li>
+					<li>Vue.js</li>
+					<li>Vuetify</li>
+					<li>Bootstrap</li>
+					<li>Tailwind</li>
+					<li>jQuery</li>
+					<li>Firebase (Firestore, Auth y Hosting)</li>
+				</ul>
+			</div>
+			<div class="mt-10">
+				<h3 class="text-4xl font-bold mb-6 mt-8 lg:mt-0">Certificaciones</h3>
+				<ul class="list-disc list-inside tracking-widest">
+					<li>Scrum Foundation Professional Certificate - SCRUM Foundation</li>
+					<li>Front End Trainee - Talento Digital para Chile</li>
+				</ul>
+			</div>
+			<hr class="lg:col-span-2 my-10" />
+			<!-- Proyectos -->
+			<div class="mx-auto lg:col-span-2">
+				<h3 class="text-4xl text-center font-bold">Proyectos</h3>
+				<div class="container grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 p-4">
+					<div class="shadow-md border-2 border-yellow-300 p-10">
+						<h4 class="text-2xl text-center font-medium">Fun Phrases</h4>
+						<a href="https://ivan270.github.io/fun-phrases/" target="_blank">
+							<img
+								src="./assets/img/project1.png"
+								class="w-100 rounded my-4"
+								alt="Project 1"
+							/>
+						</a>
+					</div>
+					<div class="shadow-md border-2 border-yellow-300 p-10">
+						<h4 class="text-2xl text-center font-medium">Digimon Api</h4>
+						<a href="https://ivan270.github.io/digimon-api/" target="_blank">
+							<img
+								src="./assets/img/project2.png"
+								class="w-100 rounded my-4"
+								alt="Project 2"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
